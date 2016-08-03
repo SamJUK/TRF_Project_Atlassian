@@ -1,0 +1,16 @@
+#include "dialog\common.hpp"
+#include "dialog\TRF.hpp"
+#include "dialog\dialog.hpp"
+
+enableItemsDropping = 0;
+joinUnassigned = 0;
+author="TRF Development Team";
+OnLoadName = "Project Atlassian";
+OnLoadMission = "Under Development";
+allowFunctionsRecompile = 1;
+
+//Functions
+  class CfgFunctions
+  {
+      #include "Functions.h"
+  };
