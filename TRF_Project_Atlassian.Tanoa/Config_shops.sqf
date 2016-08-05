@@ -65,6 +65,12 @@ WeaponArray=[
       ["B_IR_Grenade",1],
       ["HandGrenade",2],
       ["FirstAidKit",3]
+    ],
+    [                           //Items
+      "ItemMap",
+      "ItemCompass",
+      "ItemWatch",
+      "ItemRadio"
     ]
   ],
     /*Sniper Start*/
@@ -86,6 +92,12 @@ WeaponArray=[
     ["B_IR_Grenade",1],
     ["HandGrenade",2],
     ["FirstAidKit",3]
+  ],
+  [                           //Items
+    "ItemMap",
+    "ItemCompass",
+    "ItemWatch",
+    "ItemRadio"
   ]
   ],
   /*Pilot Start*/
@@ -107,6 +119,40 @@ WeaponArray=[
     ["B_IR_Grenade",1],
     ["HandGrenade",2],
     ["FirstAidKit",3]
+  ],
+  [                           //Items
+    "ItemMap",
+    "ItemCompass",
+    "ItemWatch",
+    "ItemRadio"
+  ]
+  ],
+  /*Machineguner*/
+  [
+  "Machinegunner",                 //Classname
+  "arifle_SPAR_02_blk_F",       //Primary
+  "hgun_Rook40_F",     //Secondary
+  "",                           //Launcher
+    [                           //PrimaryAttachments
+      "optic_Holosight_blk_F",          //Sight
+      "",                         //Light/Laster
+      "",                          //Silencer
+      "bipod_01_F_blk"                           //Bipod
+      ],
+  [                             //Magazines
+    ["150Rnd_556x45_Drum_Mag_F",3],
+    ["16Rnd_9x21_Mag",3],
+    ["SmokeShell",5],
+    ["B_IR_Grenade",1],
+    ["HandGrenade",2],
+    ["FirstAidKit",3]
+  ],
+  [                           //Items
+    "ItemMap",
+    "ItemCompass",
+    "ItemWatch",
+    "ItemRadio"
   ]
   ]
+
 ];

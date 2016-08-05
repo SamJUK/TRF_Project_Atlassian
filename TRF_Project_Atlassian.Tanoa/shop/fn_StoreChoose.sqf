@@ -46,6 +46,7 @@ switch(_store) do{
     _launcher = _array select 3;
     _primaryAttachments = _array select 4;
     _mags = _array select 5;
+    _items = _array select 6;
 
     removeAllWeapons player;
     ClearMagazineCargo player;
@@ -64,6 +65,9 @@ switch(_store) do{
     {
       player addMagazines _x;
     }forEach _mags;
+    {
+      player linkItem _x;
+    }forEach _items;
     player selectWeapon ((weapons player) select 1);
     player switchMove "Acts_UnconsciousStandUp_part2";
     player action ["SwitchWeapon", player, player, 100];

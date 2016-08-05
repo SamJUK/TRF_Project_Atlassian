@@ -8,6 +8,8 @@ author="TRF Development Team";
 OnLoadName = "Project Atlassian";
 OnLoadMission = "Under Development";
 allowFunctionsRecompile = 1;
+enableDebugConsole = 2;
+respawn = "BASE";
 
 //Functions
   class CfgFunctions
