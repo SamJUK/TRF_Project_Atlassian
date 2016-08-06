@@ -1,3 +1,4 @@
+disableSerialization;
 _type = _this select 0;
 
 createDialog "TRF_Store";

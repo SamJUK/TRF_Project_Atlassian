@@ -14,3 +14,5 @@ player addGoggles "G_Shades_Black";
 
 player setVariable ["TRF_Cash", 0];
 player setVariable ["TRF_Bank", 5000];
+
+player addAction ["Admin Tools", {[]spawn TRF_fnc_openAdminTools}];

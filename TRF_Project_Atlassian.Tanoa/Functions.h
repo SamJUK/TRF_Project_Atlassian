@@ -30,4 +30,22 @@ class TRF_Framework
     class refreshATM{};
     class banktype{};
   };
+  class RadioTowers
+  {
+    file = "core\radioTowers";
+    class radioTowerRepair{};
+    class radioTowersOpen{};
+  };
+  class AdminTools
+  {
+    file = "core\AdminTools";
+    class openAdminTools{};
+    class openAdmintoolsSpawn{};
+    class populateCMDS{};
+    class populatePlayerList{};
+    class populateSpawnList{};
+    class filterSpawn{};
+    class VehicleSpawn{};
+    class ATexec{};
+  };
 };

@@ -3,18 +3,41 @@ _place = _this select 0;
 place = "";
 vehType = "";
 switch (_place) do {
-  case "LRA": {
-    place = LRA_Fuel_Deliver;
-    vehType = "B_T_Truck_01_fuel_F";
-  };
-  case "BP": {
-    place = BP_Cargo_Deliver;
-    vehType = "B_T_Truck_01_Repair_F";
-  };
-  case "OU": {
-    place = Oumere_Ammo_Deliver;
-    vehType = "B_T_Truck_01_ammo_F";
-  };
+  //FUEL
+    case "LRA_Fuel_Deliver": {
+      place = LRA_Fuel_Deliver;
+      vehType = "B_T_Truck_01_fuel_F";
+    };
+    case "BP_Fuel_Deliver": {
+        place = BP_Fuel_Deliver;
+        vehType = "B_T_Truck_01_fuel_F";
+    };
+    case "Oumere_Fuel_Deliver": {
+      place = Oumere_Fuel_Deliver;
+      vehType = "B_T_Truck_01_fuel_F"
+    };
+    case "LaRochelle_Fuel_Deliver":{
+      place = LaRochelle_Fuel_Deliver;
+      vehType = "B_T_Truck_01_fuel_F"
+    };
+  //Container
+    case "BP_Cargo_Deliver": {
+      place = BP_Cargo_Deliver;
+      vehType = "B_T_Truck_01_Repair_F";
+    };
+    case "Oumere_Cargo_Deliver": {
+      place = Oumere_Cargo_Deliver;
+      vehType = "B_T_Truck_01_Repair_F";
+    };
+    case "LaRochelle_Cargo_Deliver":{
+      place = LaRochelle_Cargo_Deliver;
+      vehType = "B_T_Truck_01_fuel_F"
+    };
+  //Tarp
+    case "Oumere_Ammo_Deliver": {
+      place = Oumere_Ammo_Deliver;
+      vehType = "B_T_Truck_01_ammo_F";
+    };
 };
 _NO = NearestObjects [getPos place,[],20];
 NO1 = [];

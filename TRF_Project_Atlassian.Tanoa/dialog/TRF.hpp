@@ -110,3 +110,51 @@ class TRFBankOff: RscText
 class TRF_ATM_BANK_INVIS_BUTTON: TRF_Button
 {
 };
+class TRF_RTButton: RscButton
+{
+  colorBackground[] =
+	{
+		"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.69])",
+		"(profilenamespace getvariable ['GUI_BCG_RGB_G',0.75])",
+		"(profilenamespace getvariable ['GUI_BCG_RGB_B',0.5])",
+		0.7
+	};
+	colorBackgroundDisabled[] =
+	{
+    "(profilenamespace getvariable ['GUI_BCG_RGB_R',0.69])",
+		"(profilenamespace getvariable ['GUI_BCG_RGB_G',0.75])",
+		"(profilenamespace getvariable ['GUI_BCG_RGB_B',0.5])",
+		0.4
+	};
+	colorBackgroundActive[] =
+	{
+		"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.69])",
+		"(profilenamespace getvariable ['GUI_BCG_RGB_G',0.75])",
+		"(profilenamespace getvariable ['GUI_BCG_RGB_B',0.5])",
+		1
+	};
+	colorFocused[] =
+	{
+		"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.69])",
+		"(profilenamespace getvariable ['GUI_BCG_RGB_G',0.75])",
+		"(profilenamespace getvariable ['GUI_BCG_RGB_B',0.5])",
+		1
+	};
+};
+class TRF_BACK_GUI: IGUIBack
+{
+  colorBackground[] =
+  {
+    0,0,0,0.6
+  };
+}
+class TRF_TITLE_BG: IGUIBack
+{
+  colorBackground[] =
+  {
+		"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.69])",
+		"(profilenamespace getvariable ['GUI_BCG_RGB_G',0.75])",
+		"(profilenamespace getvariable ['GUI_BCG_RGB_B',0.5])",
+		0.5
+	};
+}
