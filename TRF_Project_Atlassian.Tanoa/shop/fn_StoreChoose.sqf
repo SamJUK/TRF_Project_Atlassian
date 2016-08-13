@@ -1,5 +1,4 @@
 _store = _this select 0;
-
 closeDialog 0;
 
 switch(_store) do{
@@ -38,40 +37,49 @@ switch(_store) do{
     player switchMove "";
     };
   case "Weapon":{
-    _item = lbCurSel 1500;
-    _data = lbData [1500, _item];
-    _array = weaponArray select _item;
-    _primary = _array select 1;
-    _secondary = _array select 2;
-    _launcher = _array select 3;
-    _primaryAttachments = _array select 4;
-    _mags = _array select 5;
-    _items = _array select 6;
+      _item = lbCurSel 1500;
+      _data = lbData [1500, _item];
+      _array = weaponArray select _item;
+      _primary = _array select 1;
+      _secondary = _array select 2;
+      _launcher = _array select 3;
+      _primaryAttachments = _array select 4;
+      _mags = _array select 5;
+      _items = _array select 6;
 
-    removeAllWeapons player;
-    ClearMagazineCargo player;
+      removeAllWeapons player;
+      ClearMagazineCargo player;
 
-    //Animation
-    player playMove "Acts_CivilHiding_1";
-    sleep 3;
-    player switchMove "Acts_SupportTeam_Back_FromKneelLoop";
-    sleep 2;
-    player addWeapon _primary;
-    player addWeapon _secondary;
-    player addWeapon _launcher;
-    {
-      player addPrimaryWeaponItem _x
-    }forEach _primaryAttachments;
-    {
-      player addMagazines _x;
-    }forEach _mags;
-    {
-      player linkItem _x;
-    }forEach _items;
-    player selectWeapon ((weapons player) select 1);
-    player switchMove "Acts_UnconsciousStandUp_part2";
-    player action ["SwitchWeapon", player, player, 100];
-    sleep 2;
-    player switchMove "";
-};
+      //Animation
+      player playMove "Acts_CivilHiding_1";
+      sleep 3;
+      player switchMove "Acts_SupportTeam_Back_FromKneelLoop";
+      sleep 2;
+      player addWeapon _primary;
+      player addWeapon _secondary;
+      player addWeapon _launcher;
+      {
+        player addPrimaryWeaponItem _x
+      }forEach _primaryAttachments;
+      {
+        player addMagazines _x;
+      }forEach _mags;
+      {
+        player linkItem _x;
+      }forEach _items;
+      player selectWeapon ((weapons player) select 1);
+      player switchMove "Acts_UnconsciousStandUp_part2";
+      player action ["SwitchWeapon", player, player, 100];
+      sleep 2;
+      player switchMove "";
+    };
+    case "Vehicle":{
+      _item = lbCurSel 1500;
+      _data = lbData [1500, _item];
+      _array = VehicleArray select _item;
+      _car = _array select 0;
+      _veh = createVehicle [_car, getMarkerPos "vehicle_dealer_spawn", [], 0, "CAN_COLLIDE"];
+      _veh setDir (markerDir "vehicle_dealer_spawn");
+        hint "Vehicle Spawned";
+    };
 };

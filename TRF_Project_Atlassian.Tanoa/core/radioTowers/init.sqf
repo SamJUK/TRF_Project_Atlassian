@@ -1,2 +1,5 @@
 //0  broke, 1 = working
-radioTower1 setVariable ["Working", true];
+//Fob
+  radioTower1 setVariable ["Working", true];
+//Main Base
+  radioTower2 setVariable ["Working", true];

@@ -154,5 +154,58 @@ WeaponArray=[
     "ItemRadio"
   ]
   ]
-
+];
+VehicleArray = [
+  [
+    "B_CTRG_LSV_01_light_F",
+    "900"
+  ],
+  [
+    "B_MRAP_01_F",
+    "900"
+  ],
+  [
+    "C_Offroad_01_F",
+    "900"
+  ],
+  [
+    "C_Offroad_02_unarmed_F",
+    "900"
+  ],
+  [
+    "I_C_Offroad_02_unarmed_F",
+    "900"
+  ],
+  [
+    "B_Truck_01_mover_F",
+    "900"
+  ],
+  [
+    "B_Truck_01_ammo_F",
+    "900"
+  ],
+  [
+    "B_Truck_01_box_F",
+    "900"
+  ],
+  [
+    "B_Truck_01_fuel_F",
+    "900"
+  ],
+  [
+    "B_Truck_01_medical_F",
+    "900"
+  ],
+  [
+    "B_Truck_01_transport_F",
+    "900"
+  ],
+  [
+    "B_Truck_01_covered_F",
+    "900"
+  ],
+  [
+    "B_Truck_01_Repair_F",
+    "900"
+  ]
 ];

@@ -15,4 +15,7 @@ player addGoggles "G_Shades_Black";
 player setVariable ["TRF_Cash", 0];
 player setVariable ["TRF_Bank", 5000];
 
-player addAction ["Admin Tools", {[]spawn TRF_fnc_openAdminTools}];
+//SAM MAIN - GEN - McFlurry
+if ((getPlayerUID player) in ["76561198055520389","76561198098581782","76561198044901622"]) then {
+  player addAction ["Admin Tools", {[]spawn TRF_fnc_openAdminTools}];
+};

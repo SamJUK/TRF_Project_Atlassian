@@ -8,6 +8,17 @@ class TRF_Framework
 		class OpenShop {};
 		class StoreChoose {};
   };
+  class Shops2
+  {
+    file = "shopV2";
+		class Store2AddBasket{};
+		class Store2RemoveBasket{};
+		class Store2Category{};
+		class Store2OpenStore {};
+		class Store2Fill {};
+		class Store2Choose {};
+		class Store2Filter {};
+  };
   class Missions
   {
     file = "Missions";
@@ -20,6 +31,7 @@ class TRF_Framework
   class Core
   {
     file = "core";
+    class find_class_name{};
   };
   class Money
   {
@@ -47,5 +59,25 @@ class TRF_Framework
     class filterSpawn{};
     class VehicleSpawn{};
     class ATexec{};
+  };
+  class Cameras
+  {
+    file = "core\Cameras";
+    class UseCameras{};
+    class OpenCameras{};
+    class switchCamera{};
+    class leaveCameras{};
+    class CameraKeyhandler{};
+  };
+  class HeadCameras
+  {
+    file = "core\Cameras\headCams";
+    class takeHeadCam{};
+    class returnHeadCam{};
+    class UseHeadCameras{};
+    class OpenHeadCameras{};
+    class switchHeadCameras{};
+    class leaveHeadCameras{};
+    class HeadCameraKeyHandler{};
   };
 };
